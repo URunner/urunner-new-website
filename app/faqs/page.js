@@ -9,23 +9,23 @@ const GOOGLE = 'https://play.google.com/store/apps/details?id=com.app.urunner'
 const faqs = [
   {
     q: 'Why are my calories showing up as zero?',
-    a: 'The URunner App is required to capture the calories on all iPhones. If the calories are showing up as zero, the Apple Watch is not connected to the Apple Health Kit. For android phones, URunner needs to connect to Google Health Connect. For android phones, check if Health Connect is running with appropriate permissions to allow Apps to connect.',
+    a: 'The Apple watch is required to capture the calories on all iPhones. If the calories are showing up as zero, the Apple watch is not connected to the Apple health kit. For android phones, URunner needs to connect to Google Health Connect. For android phones, check if Health Connect is running with appropriate permissions to allow Apps to connect.',
   },
   {
     q: 'Can other Fitness Apps be connected to the URunner App?',
-    a: 'Yes! URunner integrates with Apple HealthKit (iOS) and Google Health Connect (Android), which means data from other fitness apps that sync to these platforms can contribute to your Activity Score. Make sure your preferred app has permissions to write health data to HealthKit or Google Health Connect.',
+    a: 'Yes, URunner can sync to Fitbit directly and to Garmin, Strava, and Oura ring through the Apple Health Kit. Follow the instructions to change the source of the step and calories.',
   },
   {
     q: 'What is the Activity Score ®?',
-    a: 'The Activity Score ® is a proprietary metric developed by URunner that quantifies your daily fitness level into a single number. It is calculated using your steps, calories burned, active minutes, and consistency over time. Your Activity Score is your fitness reputation — higher scores unlock better rewards and leaderboard positions.',
+    a: 'The URunner Activity Score ® is an objective index of your daily activity. The Activity Score ® is based on the number of steps and calories for the day. It is updated each time the App is refreshed and used to determine the number of virtual URunner coins deposited into your wallet. Depending on the level of activity, the Activity Score ® can range between 0 and 40. A minimum of 500 steps is required to display the score. The approximate ranges are: Score 0 – 2 (1 – 2 miles, 200 – 450 calories), Score 2 – 8 (2 – 4 miles, 450 – 800 calories), Score 8 – 10 (4 – 5 miles, 800 – 900 calories), Score over 10 (Over 5 miles, 1000+ calories). The Activity Score ® increases exponentially with a combination of higher calories and higher steps. Marathon runners can easily attain scores between 20 and 40. A healthy goal is to maintain a score between 3 and 6.',
   },
   {
     q: 'Why is my Activity Score ® zero?',
-    a: 'Your Activity Score ® may show zero if URunner does not have permission to read your health data. Please check your phone settings to ensure URunner has access to Apple HealthKit or Google Health Connect. Also make sure you have been active today — the score updates based on real-time data from your device.',
+    a: 'The steps and calories data sets are used to calculate the Activity Score ®. A minimum of 500 steps are required to display the Activity Score ®. The number of steps and calories may be insufficient for the Activity Score ® to register.',
   },
   {
     q: 'What are virtual URunner coins and how are they generated?',
-    a: 'URunner coins are virtual rewards earned by completing physical activity tracked through the URunner app. Coins are generated based on your steps, calories, active minutes, and streaks. They can be redeemed for real rewards, converted to URN tokens on the Solana blockchain, entered into sweepstakes, or donated to charity. The more you move and the more consistent your activity, the more coins you earn.',
+    a: 'Virtual URunner coins are URunner tokens within the URunner App. These coins are generated based on an algorithm that uses the highest daily Activity Score ®. The number of coins generated increases exponentially with higher Activity Scores ® and can range from 0.20 to well over 13 coins depending on the level of activity. Coins can also be earned by posts, likes and comments on Feeds and by completing challenges. The coins are deposited into the virtual URunner wallet at the end of the day. Regular check-ins into the URunner App are required to receive the virtual coins. Check-in must be at least once in two days. URunner will send a general reminder once in 24 hours and another reminder at 9 pm, local time.',
   },
   {
     q: 'You can find additional information and FAQs on the URunner App',
@@ -73,7 +73,7 @@ export default function FAQsPage() {
 
           <div style={{ textAlign: 'center', marginTop: 48 }}>
             <a
-              href={APPLE}
+              href="/faq_urunner.pdf"
               target="_blank"
               rel="noopener noreferrer"
               style={{

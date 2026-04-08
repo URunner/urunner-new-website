@@ -1,13 +1,14 @@
 import Link from 'next/link'
+import Image from 'next/image'
 
 export default function Footer() {
   return (
     <footer className="footer">
       <div className="footer-inner">
         <div className="footer-brand">
-          <div className="logo">
-            <div className="logo-u">U</div>URunner
-          </div>
+          <Link href="/" className="logo">
+            <Image src="/logo.jpg" alt="URunner" width={44} height={44} className="logo-img" />
+          </Link>
           <p className="footer-desc">
             UWalk. URun. UEarn. Every step earns real rewards. Built in Los Angeles. Powered by Solana.
           </p>

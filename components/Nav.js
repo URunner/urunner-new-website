@@ -1,6 +1,7 @@
 'use client'
 import { useEffect, useState } from 'react'
 import Link from 'next/link'
+import Image from 'next/image'
 import { usePathname } from 'next/navigation'
 
 export default function Nav() {
@@ -30,7 +31,7 @@ export default function Nav() {
       <nav className={`nav${scrolled ? ' scrolled' : ''}`}>
         <div className="nav-inner">
           <Link href="/" className="logo">
-            <div className="logo-u">U</div>URunner
+            <Image src="/logo.jpg" alt="URunner" width={44} height={44} className="logo-img" priority />
           </Link>
           <div className="nav-links">
             {links.map(l => (
