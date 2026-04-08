@@ -70,14 +70,16 @@ export default function Home() {
             <div className="hero-glow" />
             <div className="hero-ring-2" />
             <div className="hero-ring" />
-            <Image
-              src="/urunners.jpg"
-              alt="URunner mascots"
-              width={380}
-              height={380}
-              className="hero-mascot"
-              priority
-            />
+            <div className="hero-mascot-wrap">
+              <Image
+                src="/urunners.jpg"
+                alt="URunner mascots"
+                width={380}
+                height={380}
+                className="hero-mascot"
+                priority
+              />
+            </div>
           </div>
         </div>
       </section>
@@ -147,7 +149,7 @@ export default function Home() {
             <div className="section-title">Four steps to<br /><em>earning while moving</em></div>
           </RevealOnScroll>
           <RevealOnScroll delay="1">
-            <p className="section-sub">No NFT purchase required. No upfront cost. Just download and start walking.</p>
+            <p className="section-sub">No upfront cost. Just download and start walking.</p>
           </RevealOnScroll>
           <div className="steps-grid">
             {[
@@ -298,7 +300,7 @@ export default function Home() {
       {/* CTA */}
       <section className="cta-section" id="download">
         <RevealOnScroll>
-          <div className="cta-title">Start earning<br /><em style={{ background: 'var(--grad)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>today</em></div>
+          <div className="cta-title">Start earning<br /><em style={{ background: 'var(--grad)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text', paddingRight: '12px', paddingBottom: '4px' }}>today</em></div>
         </RevealOnScroll>
         <RevealOnScroll delay="1">
           <p className="cta-sub">Download URunner free. Get 25 welcome coins. Walk more, earn more. It's that simple.</p>
