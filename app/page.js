@@ -50,6 +50,8 @@ export default function Home() {
 
       {/* HERO */}
       <section className="hero">
+        <div className="hero-orb-1" />
+        <div className="hero-orb-2" />
         <div className="hero-inner">
           <div>
             <div className="hero-tag">
@@ -66,11 +68,13 @@ export default function Home() {
           </div>
           <div className="hero-visual">
             <div className="hero-glow" />
+            <div className="hero-ring-2" />
+            <div className="hero-ring" />
             <Image
               src="/urunners.jpg"
               alt="URunner mascots"
-              width={360}
-              height={360}
+              width={380}
+              height={380}
               className="hero-mascot"
               priority
             />
