@@ -54,16 +54,16 @@ export default function Home() {
         <div className="hero-orb-2" />
         <div className="hero-inner">
           <div>
-            <div className="hero-tag">
-              <span />
-              Now available on iOS &amp; Android
-            </div>
             <h1>
-              Every step<br />earns you<br /><em>real rewards.</em>
+              Every step<br />earns you<br /><em>real rewards</em>
             </h1>
             <p className="hero-sub">
               Track your Activity Score, earn coins for walking, compete with friends, collect cards, and get paid to move. AI-powered insights for every step you take.
             </p>
+            <div className="hero-tag" style={{ marginBottom: 16 }}>
+              <span />
+              Now available on iOS &amp; Android
+            </div>
             <StoreButtons />
           </div>
           <div className="hero-visual">
@@ -109,7 +109,7 @@ export default function Home() {
         <div className="section-inner">
           <div className="section-tag">Features</div>
           <RevealOnScroll>
-            <div className="section-title">More than tracking.<br /><em>A complete fitness economy.</em></div>
+            <div className="section-title">More than tracking<br /><em>A complete fitness economy</em></div>
           </RevealOnScroll>
           <RevealOnScroll delay="1">
             <p className="section-sub">
@@ -118,16 +118,16 @@ export default function Home() {
           </RevealOnScroll>
           <div className="features">
             {[
-              { icon: '📊', bg: 'var(--bG)', title: 'Activity Score', body: 'A single number that quantifies your fitness level daily. Built from steps + calories via HealthKit. Your score is your reputation.' },
-              { icon: '🪙', bg: 'rgba(240,177,50,.08)', title: 'Earn coins', body: 'Every step, every calorie, every active minute earns URunner coins. Convert to URN tokens on Solana or redeem for real rewards.' },
-              { icon: '🔥', bg: 'rgba(242,122,58,.08)', title: 'Streaks & multipliers', body: 'Build daily streaks for escalating coin multipliers. 7 days = 1.5x. 30 days = 3x. Break the streak, lose the multiplier.' },
-              { icon: '🃏', bg: 'rgba(77,158,246,.08)', title: 'UCards collectibles', body: 'Walk to real-world locations to collect digital cards. Rarity tiers from Common to Legendary. Trade with friends, complete chapters.' },
-              { icon: '🏆', bg: 'rgba(161,125,247,.08)', title: 'Leagues & competition', body: 'Weekly leagues with promotion and relegation. Head-to-head challenges with friends. Local and global leaderboards.' },
-              { icon: '🛍️', bg: 'rgba(240,123,175,.08)', title: 'Marketplace', body: 'Flash drops, partner rewards, charity donations, and sweepstakes. Your coins have real purchasing power across 50+ partners.' },
+              { icon: '📊', title: 'Activity Score', body: 'A single number that quantifies your fitness level daily. Built from steps + calories via HealthKit. Your score is your reputation.' },
+              { icon: '🪙', title: 'Earn coins', body: 'Every step, every calorie, every active minute earns URunner coins. Convert to URN tokens on Solana or redeem for real rewards.' },
+              { icon: '🔥', title: 'Streaks & multipliers', body: 'Build daily streaks for escalating coin multipliers. 7 days = 1.5x. 30 days = 3x. Break the streak, lose the multiplier.' },
+              { icon: '🃏', title: 'UCards collectibles', body: 'Walk to real-world locations to collect digital cards. Rarity tiers from Common to Legendary. Trade with friends, complete chapters.' },
+              { icon: '🏆', title: 'Leagues & competition', body: 'Weekly leagues with promotion and relegation. Head-to-head challenges with friends. Local and global leaderboards.' },
+              { icon: '🛍️', title: 'Marketplace', body: 'Flash drops, partner rewards, charity donations, and sweepstakes. Your coins have real purchasing power across 50+ partners.' },
             ].map((f, i) => (
               <RevealOnScroll key={f.title} delay={((i % 3) + 1).toString()}>
                 <div className="feature">
-                  <div className="feature-icon" style={{ background: f.bg }}>{f.icon}</div>
+                  <div className="feature-icon">{f.icon}</div>
                   <h3>{f.title}</h3>
                   <p>{f.body}</p>
                 </div>
@@ -144,7 +144,7 @@ export default function Home() {
         <div className="section-inner">
           <div className="section-tag">How it works</div>
           <RevealOnScroll>
-            <div className="section-title">Four steps to<br /><em>earning while moving.</em></div>
+            <div className="section-title">Four steps to<br /><em>earning while moving</em></div>
           </RevealOnScroll>
           <RevealOnScroll delay="1">
             <p className="section-sub">No NFT purchase required. No upfront cost. Just download and start walking.</p>
@@ -173,7 +173,7 @@ export default function Home() {
         <div className="section-inner">
           <div className="section-tag">🧠 AI-powered</div>
           <RevealOnScroll>
-            <div className="section-title">Every effort is<br /><em>recognized.</em></div>
+            <div className="section-title">Every effort is<br /><em>recognized</em></div>
           </RevealOnScroll>
           <RevealOnScroll delay="1">
             <p className="section-sub">
@@ -207,7 +207,7 @@ export default function Home() {
           <div className="section-tag">Token economy</div>
           <RevealOnScroll>
             <div className="section-title" style={{ marginLeft: 'auto', marginRight: 'auto' }}>
-              Your steps have<br /><em>real value.</em>
+              Your steps have<br /><em>real value</em>
             </div>
           </RevealOnScroll>
           <RevealOnScroll delay="1">
@@ -218,19 +218,19 @@ export default function Home() {
           <RevealOnScroll delay="2">
             <div className="coin-flow">
               {[
-                { icon: '🚶', label: 'Move', sub: 'Steps + calories', bg: 'var(--bG)' },
+                { icon: '🚶', label: 'Move', sub: 'Steps + calories' },
                 null,
-                { icon: '🪙', label: 'Earn', sub: 'URunner coins', bg: 'rgba(240,177,50,.08)' },
+                { icon: '🪙', label: 'Earn', sub: 'URunner coins' },
                 null,
-                { icon: '🔄', label: 'Convert', sub: 'URN on Solana', bg: 'rgba(161,125,247,.08)' },
+                { icon: '🔄', label: 'Convert', sub: 'URN on Solana' },
                 null,
-                { icon: '🎁', label: 'Redeem', sub: 'Rewards & merch', bg: 'rgba(77,158,246,.08)' },
+                { icon: '🎁', label: 'Redeem', sub: 'Rewards & merch' },
               ].map((item, i) =>
                 item === null ? (
                   <div key={i} className="coin-arrow">→</div>
                 ) : (
                   <div key={item.label} className="coin-step">
-                    <div className="coin-icon" style={{ background: item.bg }}>{item.icon}</div>
+                    <div className="coin-icon">{item.icon}</div>
                     <div className="coin-label">{item.label}</div>
                     <div className="coin-sub">{item.sub}</div>
                   </div>
@@ -246,7 +246,7 @@ export default function Home() {
         <div className="section-inner">
           <div className="section-tag">Community</div>
           <RevealOnScroll>
-            <div className="section-title">What walkers<br /><em>are saying.</em></div>
+            <div className="section-title">What walkers<br /><em>are saying</em></div>
           </RevealOnScroll>
           <RevealOnScroll delay="1">
             <p className="section-sub">Join thousands of users who are turning their daily movement into real value.</p>
@@ -298,7 +298,7 @@ export default function Home() {
       {/* CTA */}
       <section className="cta-section" id="download">
         <RevealOnScroll>
-          <div className="cta-title">Start earning<br /><em style={{ color: 'var(--b)' }}>today.</em></div>
+          <div className="cta-title">Start earning<br /><em style={{ background: 'var(--grad)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>today</em></div>
         </RevealOnScroll>
         <RevealOnScroll delay="1">
           <p className="cta-sub">Download URunner free. Get 25 welcome coins. Walk more, earn more. It's that simple.</p>
