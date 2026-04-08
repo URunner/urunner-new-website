@@ -3,6 +3,7 @@ import { useEffect, useState } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 import { usePathname } from 'next/navigation'
+import { SmartDownloadButton } from './StoreLink'
 
 export default function Nav() {
   const [scrolled, setScrolled] = useState(false)
@@ -39,14 +40,7 @@ export default function Nav() {
                 {l.label}
               </Link>
             ))}
-            <a
-              href="https://apps.apple.com/us/app/urunner/id1617568183"
-              className="nav-cta"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Download App
-            </a>
+            <SmartDownloadButton className="nav-cta">Download App</SmartDownloadButton>
           </div>
           <div
             className={`nav-hamburger${open ? ' open' : ''}`}
@@ -66,15 +60,7 @@ export default function Nav() {
             {l.label}
           </Link>
         ))}
-        <a
-          href="https://apps.apple.com/us/app/urunner/id1617568183"
-          className="nav-cta"
-          target="_blank"
-          rel="noopener noreferrer"
-          onClick={() => setOpen(false)}
-        >
-          Download App
-        </a>
+        <SmartDownloadButton className="nav-cta" onClick={() => setOpen(false)}>Download App</SmartDownloadButton>
       </div>
     </>
   )
