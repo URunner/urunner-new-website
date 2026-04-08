@@ -32,7 +32,7 @@ export default function Nav() {
       <nav className={`nav${scrolled ? ' scrolled' : ''}`}>
         <div className="nav-inner">
           <Link href="/" className="logo">
-            <Image src="/logo.jpg" alt="URunner" width={44} height={44} className="logo-img" priority />
+            <Image src="/logo.jpg" alt="URunner" width={56} height={56} className="logo-img" priority />
           </Link>
           <div className="nav-links">
             {links.map(l => (
