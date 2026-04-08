@@ -1,0 +1,9 @@
+.next/
+node_modules/
+out/
+.env*
+
+# Original reference files (root level only)
+/URunner.jpeg
+/urunners.jpg
+/URunner_Website.html
