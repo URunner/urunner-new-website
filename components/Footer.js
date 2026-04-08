@@ -31,7 +31,7 @@ export default function Footer() {
         </div>
       </div>
       <div className="footer-bottom">
-        <span>© 2026 URunner. All rights reserved.</span>
+        <span>© 2024 URunner. All rights reserved.</span>
         <span>Made with 🚶 in Los Angeles</span>
       </div>
     </footer>

@@ -60,9 +60,11 @@ export default function Home() {
             <p className="hero-sub">
               Track your Activity Score, earn coins for walking, compete with friends, collect cards, and get paid to move. AI-powered insights for every step you take.
             </p>
-            <div className="hero-tag" style={{ marginBottom: 16 }}>
-              <span />
-              Now available on iOS &amp; Android
+            <div style={{ display: 'flex', justifyContent: 'center', marginBottom: 16 }}>
+              <div className="hero-tag">
+                <span />
+                Now available on iOS &amp; Android
+              </div>
             </div>
             <StoreButtons />
           </div>
