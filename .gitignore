@@ -3,7 +3,12 @@ node_modules/
 out/
 .env*
 
-# Original reference files (root level only)
-/URunner.jpeg
-/urunners.jpg
-/URunner_Website.html
+# Root-level reference files (not part of the site)
+*.jpeg
+*.jpg
+*.JPG
+*.pdf
+*.html
+
+# Keep public assets
+!public/**
