@@ -93,7 +93,7 @@ body::after{
 .hero-orb-2{position:absolute;bottom:-10%;right:-5%;width:500px;height:500px;border-radius:50%;background:radial-gradient(rgba(139,92,246,.08),transparent 65%);animation:orbFloat 16s ease-in-out infinite reverse;pointer-events:none}
 @keyframes orbFloat{0%,100%{transform:translate(0,0)}50%{transform:translate(30px,-30px)}}
 .hero-inner{max-width:1200px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center;position:relative;z-index:1}
-@media(max-width:900px){.hero-inner{grid-template-columns:1fr;text-align:center;gap:40px}}
+@media(max-width:900px){.hero-inner{grid-template-columns:1fr;text-align:center;gap:40px}.hero-visual{margin-top:16px}}
 .hero-tag{
   display:inline-flex;align-items:center;gap:8px;
   background:rgba(77,158,246,.1);
@@ -143,7 +143,7 @@ body::after{
 .hero-mascot{
   width:100%;height:100%;object-fit:cover;object-position:center 10%;display:block;
 }
-@keyframes float{0%,100%{transform:translateY(0) rotate(-1deg)}50%{transform:translateY(-20px) rotate(1deg)}}
+@keyframes float{0%,100%{transform:translateY(10px) rotate(-1deg)}50%{transform:translateY(-10px) rotate(1deg)}}
 .hero-ring{
   position:absolute;width:420px;height:420px;border-radius:50%;
   border:1.5px solid rgba(77,158,246,.12);
